@@ -30,11 +30,11 @@ router.delete('/:id', async (req, res) => {
 
 async function loadPostsCollection() {
   const client = await mongodb.MongoClient.connect
-  ('mongodb+srv://m001-student:m001-mongodb-basics@sandbox-s8g7n.mongodb.net/venom-todo?retryWrites=true&w=majority',{
+  ('mongodb+srv://m001-student:m001-mongodb-basics@sandbox-s8g7n.mongodb.net/venom-posts?retryWrites=true&w=majority',{
     useNewUrlParser: true
   });
 
-  return client.db('venom-todo').collection('posts');
+  return client.db('venom-posts').collection('posts');
 }
 
 module.exports = router;

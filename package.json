@@ -1,5 +1,5 @@
 {
-  "name": "venom-todo-app",
+  "name": "venom-posts-app",
   "version": "1.0.0",
   "description": "Full stack vue and express app",
   "main": "index.js",
